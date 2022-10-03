@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        
+        //Mouse:
+        /*onclick
+        ondblclick
+        onmouseup
+        onmouseover
+        onmouseout*/
+        /*
+        function acao1(){
+            alert('Elemento foi clicado')
+        }
+        function acao2(){
+            alert('O cursos do mouse deixou a região do elemento')
+        }
+        */
+
+        // Teclado:
+        /*onkeydown
+        onkeypress
+        onkeyup
+        */
+
+        //Janela:
+        /*onresize
+        onscroll
+        */
+
+        //Formulário:
+        /*onfocus
+        onblur
+        onchange
+        */
+
+        function acao1(){
+            alert('Elemento foi clicado')
+        }
+
+    </script>
+    
+
+</head>
+<body onscroll="console.log('Evento disparado')">
+        <!-- onclick="acao1()" onmouseout="acao2()" -->
+    <div style="background: #ccc; height: 150px; width: 150px;">
+        
+    </div>
+    <br><br><br>
+
+    <div style="background: blue; height: 150px; width: 150px;">
+        <!-- onkeypress="acao1()"  -->
+        <input style="display: block;" type="text">
+        
+    </div>
+    <br><br><br>
+
+    <div style="height: 3000px; width: 150px; background-color: red;">
+
+    </div>
+    <br><br><br>
+    <div>
+       <input onfocus="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')" type="text">
+        <br><br>
+       <select name="" id="" onchange="console.log('Estado foi modificado')">
+        <option value="">-- Selecione --</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+       </select>
+    </div>
+
+
+
+
+
+</body>
+</html>

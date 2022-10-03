@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Java Script</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+      body{
+        margin: 50px;
+      }
+
+    </style>
+
+    
+
+	</head>
+
+  <body>
+    <script>
+        /*
+        var objetos = Array()
+
+        objetos[0] = 'Cadeira'
+        objetos[1] = 'Impressora'
+        objetos[2] = 'Garfo'
+
+        console.log(objetos)
+
+        function adicionar(){
+            if(document.getElementById('texto').value = objetos[0]){
+                console.log('Cadeira')
+            }else{
+                alert('Insira um valor')
+            }
+            
+            
+        }
+        */
+
+        var objetos = Array('Cadeira','Impressora','Garfo')
+
+        function adicionarObjetos(){
+            //recupera o valor inserido no campo id objeto
+            var objeto = document.getElementById('objeto').value
+
+            //caso possual algum valor preenchido entra no if
+            if(objeto != ''){
+                //verifica se o valor já não foi inserido anteriormente
+                //se sim, informa que valor já existe, se não insere novo valor
+                if(objetos.indexOf(objeto) !== -1){
+                    alert('Objetos já foi adicionado')
+                }else{
+                    objetos.push(objeto)
+                    console.log(objetos)
+
+                    document.getElementById('objeto').value = ''
+                }
+            }else {
+                alert('Informe um objeto válido')
+            }
+        }
+
+        function ordenarObjetos(){
+            objetos.sort()
+            console.log(objetos)
+        }
+
+    </script>
+
+
+
+    <input type="text" id="objeto">
+    <button onclick="adicionarObjetos()">Adicionar</button>
+    <button onclick="ordenarObjetos()">Ordenar</button>
+    
+
+    
+  </body>	
+
+</html>
