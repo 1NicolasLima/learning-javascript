@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Java Script</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+      
+
+    </style>
+
+    <script>
+        
+       var lista_convidados = Array()
+
+       lista_convidados[0] = 'Nicolas'
+       lista_convidados[1] = 'Pedro'
+       lista_convidados[2] = 'Lucas'
+       lista_convidados[3] = 'Rodrigo'
+       lista_convidados[4] = 'Matheus' 
+
+        console.log(lista_convidados)
+        for(var i=0; i < lista_convidados.length;i++){
+            document.write(lista_convidados[i]);
+            console.log(lista_convidados[i])
+        }
+        document.write('<br/>')
+        
+
+        
+        /*
+        while(x <= 10){
+            x++
+            
+            if(x===11){
+                break
+            }
+            document.write(' 1 x ' + x + '=' +(1*x)+ '<br/>')
+        }
+        */
+        var x = 1
+        var y = 1
+       while(x<=10){
+        y=1;
+        while(y<=10){
+            console.log(x+'x'+y+'='+(x*y)+'<br/>')
+            document.write(x+'x'+y+'='+(x*y)+'<br/>')
+            y++
+        }
+        console.log('\n')
+        document.write('<hr/>')
+        x++;
+       }
+
+    </script>
+
+	</head>
+
+  <body>
+    
+
+
+
+    
+  </body>	
+
+</html>
